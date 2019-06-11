@@ -101,16 +101,16 @@ class Blockchain{
     // }
 
     minePendingTransactions(minRewardAddress){
-        let block = new Block(Date.now(), this.pendingTransactions);
-        block.prevHash=this.getLatestBlock().hash;
+        const rewardTx = new Transaction(null, miningRewardAddress, this.miningReward);
+        this.pendingTransactions.push(rewardTx);
+
+        let block = new Block(Date.now(), this.pendingTransactions,this.getLatestBlock().hash);
         block.mineBlock(this.difficulty);
 
         console.log("Block Successfully mined");
         this.chain.push(block);
 
-        this.pendingTransactions=[
-            new Transaction(null, minRewardAddress, this.miningReward)
-        ];
+        this.pendingTransactions=[];
 
     }
 
