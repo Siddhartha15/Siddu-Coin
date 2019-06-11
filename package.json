@@ -1,0 +1,23 @@
+{
+  "name": "siddu-coin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Siddhartha15/Siddu-Coin.git"
+  },
+  "author": "Siddhartha M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Siddhartha15/Siddu-Coin/issues"
+  },
+  "homepage": "https://github.com/Siddhartha15/Siddu-Coin#readme"
+}
